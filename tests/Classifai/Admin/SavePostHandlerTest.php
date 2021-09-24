@@ -48,7 +48,7 @@ class SavePostHandlerTest extends WP_UnitTestCase {
 		);
 
 		add_filter(
-			'classifai_post_statuses',
+			'classifai_post_statuses_for_post_type_or_id',
 			function( $post_statuses, $post_type, $post_id ) use ( $filtered_post_statuses_array ) {
 				return $filteredpost_statuses_array;
 			},
